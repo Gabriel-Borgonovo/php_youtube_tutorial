@@ -18,7 +18,7 @@
          /**-----Función para ejecutar consultas simples----- */
          protected static function ejecutar_consulta_simple($consulta){
             $sql=self::conectar()->prepare($consulta);
-            $sql->execute;
+            $sql->execute();
             return $sql;
          }
 
@@ -109,11 +109,11 @@
             
             if($pagina==1){
                 $tabla.='<li class="page-item disabled">
-                            <a class="page-link"><i class="fa-solid fa-angles-left"></i></a>
+                            <a class="page-link">primera</a>
                         </li>';
             }else{
                 $tabla.='<li class="page-item">
-                            <a class="page-link" href="'.$url.'1/"><i class="fa-solid fa-angles-left"></i></a>
+                            <a class="page-link" href="'.$url.'1/">primera</a>
                         </li>
                         <li class="page-item">
                             <a class="page-link" href="'.$url.($pagina-1).'/">Anterior</a>
@@ -144,14 +144,14 @@
 
             if($pagina==$Npaginas){
                 $tabla.='<li class="page-item disabled">
-                            <a class="page-link"><i class="fa-solid fa-angles-right"></i></a>
+                            <a class="page-link">ultima</a>
                         </li>';
             }else{
                 $tabla.='<li class="page-item">
                             <a class="page-link" href="'.$url.($pagina+1).'/">Siguiente</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link" href="'.$url.$Npaginas.'/"><i class="fa-solid fa-angles-right"></i></a>
+                            <a class="page-link" href="'.$url.$Npaginas.'/">ultima</i></a>
                         </li>
                         ';
             }
