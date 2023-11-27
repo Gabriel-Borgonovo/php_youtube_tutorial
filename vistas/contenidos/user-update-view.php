@@ -259,13 +259,28 @@
 					<div class="col-12 col-md-6">
 						<div class="form-group">
 							<label for="usuario_admin" class="bmd-label-floating">Nombre de usuario</label>
-							<input type="text" pattern="[a-zA-Z0-9]{1,35}" class="form-control" name="usuario_admin" id="usuario_admin" maxlength="35" required="" >
+							<input 
+								type="text" 
+								pattern="[a-zA-Z0-9]{1,35}" 
+								class="form-control" name="usuario_admin" 
+								id="usuario_admin"
+								maxlength="35" 
+								required="" 
+							/>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="form-group">
 							<label for="clave_admin" class="bmd-label-floating">Contraseña</label>
-							<input type="password" class="form-control" name="clave_admin" id="clave_admin" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required="" >
+							<input 
+								type="password" 
+								class="form-control" 
+								name="clave_admin" 
+								id="clave_admin" 
+								pattern="[a-zA-Z0-9$@.-]{7,100}" 
+								maxlength="100" 
+								required="" 
+							/>
 						</div>
 					</div>
 				</div>
